@@ -9,6 +9,7 @@ node_modules/
 
 # Generated Expo and Vercel files.
 .expo/
+**/.expo/
 dist/
 .vercel/
 

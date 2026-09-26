@@ -14,6 +14,14 @@
     ],
     "plugins": [
       "expo-asset"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ff34c314-c37d-4661-a029-927f6766b75b"
+      }
+    },
+    "android": {
+      "package": "com.danukachathurya8.campusprofile"
+    }
   }
 }
