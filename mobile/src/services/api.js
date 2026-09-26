@@ -1,7 +1,12 @@
 import axios from 'axios';
 
-// This computer's current Wi-Fi LAN address. Reserve it in your router for a permanent address.
-export const API_URL = 'https://madproject-gsst.vercel.app/';
+const configuredApiUrl = process.env.EXPO_PUBLIC_API_URL || 'https://madproject-gsst.vercel.app/api';
+const normalizedApiUrl = configuredApiUrl.replace(/\/+$/, '');
+
+// Accept either the API root or the deployment root in local/Vercel configuration.
+export const API_URL = normalizedApiUrl.endsWith('/api')
+  ? normalizedApiUrl
+  : `${normalizedApiUrl}/api`;
 
 const api = axios.create({ baseURL: API_URL, headers: { 'Content-Type': 'application/json' }, timeout: 15000 });
 

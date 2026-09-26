@@ -1,0 +1,16 @@
+# Dependencies are installed by npm on each machine and deployment platform.
+node_modules/
+**/node_modules/
+
+# Secrets and local environment settings.
+.env
+.env.*
+!.env.example
+
+# Generated Expo and Vercel files.
+.expo/
+dist/
+.vercel/
+
+# Logs.
+npm-debug.log*
