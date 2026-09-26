@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const configuredApiUrl = process.env.EXPO_PUBLIC_API_URL || 'https://madproject-gsst.vercel.app/api';
+const configuredApiUrl = process.env.EXPO_PUBLIC_API_URL || 'https://madproject-xi.vercel.app/api';
 const normalizedApiUrl = configuredApiUrl.replace(/\/+$/, '');
 
 // Accept either the API root or the deployment root in local/Vercel configuration.
