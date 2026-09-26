@@ -1,3 +1,15 @@
 {
-  "version": 2
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "access-control-request-method"
+        }
+      ],
+      "destination": "/api/cors"
+    }
+  ]
 }
