@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Campus Profile",
+    "slug": "campus-profile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#F8FAFC"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}
