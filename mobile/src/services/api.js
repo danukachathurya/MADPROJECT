@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // This computer's current Wi-Fi LAN address. Reserve it in your router for a permanent address.
-export const API_URL = 'http://10.214.105.158:5000/api';
+export const API_URL = 'https://madproject-gsst.vercel.app/';
 
 const api = axios.create({ baseURL: API_URL, headers: { 'Content-Type': 'application/json' }, timeout: 15000 });
 
